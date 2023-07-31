@@ -1,1 +1,2 @@
-# This is a demo Repo for use when dockerizing Spring Boot App
+# Goal 
+This is a demo Repo for use when dockerizing Spring Boot App
