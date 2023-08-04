@@ -14,7 +14,10 @@ import org.springframework.web.multipart.MultipartFile;
 
 @RestController("/")
 public class HelloController {
-    private static final String UPLOADED_FOLDER = "uploaded/";
+
+    // get the upload directory from UPLOAD_DESTINATION env var
+
+    private static String UPLOADED_FOLDER = System.getenv("UPLOAD_DESTINATION") != null ? System.getenv("UPLOAD_DESTINATION") : "uploaded/";
 
 
     @GetMapping("")
